@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valet Default Site</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --link-and-highlight-color: #d36660;
+            --text-color: #414141;
+            --header-color: #232323;
+            --code-background-color: #fbfbfd;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: var(--header-color);
+            font-size: 1.75em;
+            letter-spacing: 0;
+            font-weight: 400;
+            margin-top: 10vh;
+        }
+
+        p {
+            margin-left: 1.5rem;
+        }
+
+        em,
+        a {
+            color: var(--link-and-highlight-color);
+        }
+
+        code {
+            color: var(--link-and-highlight-color);
+            background-color: var(--code-background-color);
+            font-weight: 500;
+            line-height: 1.9;
+            font-size: 0.85rem;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+            padding: 0.2rem 0.45rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #171923;
+                --text-color: #b5b5bd;
+                --header-color: #d9dae3;
+                --code-background-color: #252a37;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1><em>#</em> Default Valet Site</h1>
+        <p>
+            This is the default site served by <a href="https://laravel.com/docs/valet">Valet</a> when the URL hasn't
+            matched a linked or parked site.
+        </p>
+        <p>
+            The current domain is <code><script>document.write(window.location.hostname);</script></code>
+        </p>
+    </main>
+</body>
+
+</html>
